@@ -123,6 +123,9 @@ public class C04변수자료형 {
 			System.out.println("거짓인경우 실행");
 		}
 		
+		
+		String var = "나의직업은 \"개발자\" 입니다.";
+		System.out.println(1e2);  // 1*10^2 = 100.0
 	}
 
 }
