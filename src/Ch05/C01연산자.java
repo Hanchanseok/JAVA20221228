@@ -1,5 +1,7 @@
 package Ch05;
 
+import java.util.Scanner;
+
 public class C01연산자 {
 
 	public static void main(String[] args) {
@@ -19,6 +21,19 @@ public class C01연산자 {
 		// 문제
 		// 두 정수를 입력받아 두수의 합 / 곱 / 차를 출력하는 프로그램을 만듭니다.
 		// Scanner 를 사용합니다.
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("정수1 : ");
+		int num1 = sc.nextInt();
+		System.out.print("정수2 : ");
+		int num2 = sc.nextInt();
+		
+		System.out.println("합 : " + (num1 + num2));
+		System.out.println("곱 : " + (num1 * num2));
+		int mi = (num1 > num2) ? (num1-num2) : (num2-num1);
+		System.out.println("차 : " + mi);
+		
+		sc.close();
 		
 		
 		//복합대입연산자
@@ -74,14 +89,14 @@ public class C01연산자 {
 		//삼향연산자
 		// (조건식)? 참인경우 실행코드 : 거짓인경우 실행코드;
 		
-		int score = 85;
-		char grade = (score > 90) ? 'A' : 'B';
-		System.out.println(score + "점은 " + grade + "등급입니다.");
-		
-		int kor = 85;
-		int eng = 60;
-		char a = (kor>80 && eng>80) ? 'A' : 'B';
-		System.out.println(score + "점은 " + a + "등급입니다.");
+//		int score = 85;
+//		char grade = (score > 90) ? 'A' : 'B';
+//		System.out.println(score + "점은 " + grade + "등급입니다.");
+//		
+//		int kor = 85;
+//		int eng = 60;
+//		char a = (kor>80 && eng>80) ? 'A' : 'B';
+//		System.out.println(score + "점은 " + a + "등급입니다.");
 
 	}
 
