@@ -59,25 +59,110 @@ public class C01While {
 
 		
 		//N부터 M까지의 합(N,M은 키보드로부터 입력), 조건 N>M
+//		Scanner sc = new Scanner(System.in);
+//		int sum=0;
+//		int n = sc.nextInt();  //초기값
+//		int m = sc.nextInt();  //마지막값
+//		
+//		if(n>m) {
+//			//Swap : 서로 바꾸기
+//			int tmp = n;  //tmp라는 공간에 n의 값을 넣어줌
+//			n = m;		  //빈 n에 m의 값을 넣어줌
+//			m = tmp;      //빈 m에 tmp의 값을 넣어줌
+//		}
+//		
+//		int i = n;  //i로 계산
+//		while(i<=m)
+//		{
+//			sum = sum + i;
+//			i++;
+//		}
+//		System.out.printf("%d부터 %d 까지 합 : %d" ,n,m,sum);
+//		sc.close();
+		
+		
+		//구구단(2단)
+//		int dan = 2;
+//		int i=1;
+//		while(i<=9)
+//		{
+//			System.out.printf("%d x %d = %d\n" ,dan,i,dan*i);
+//			i++;
+//		}
+//		sc.close();
+		
+		
+		//구구단(N단)
+//		Scanner sc = new Scanner(System.in);
+//		int dan = sc.nextInt();
+//		int i=1;
+//		while(i<=9)
+//		{
+//			System.out.printf("%d x %d = %d\n" ,dan,i,dan*i);
+//			i++;
+//		}
+//		sc.close();
+		
+		
+		//1부터 10까지 수중의 4의 배수만 출력
+//		int i = 1;
+//		
+//		while(i<=10)
+//		{
+//			if(i%4==0)
+//				System.out.println("i 값 : " + i);
+//			
+//			i++;
+//		}
+		
+		
+		//1부터 n까지 수중의 4의 배수만 출력
+//		Scanner sc = new Scanner(System.in);
+//		int i = 1;
+//		int n = sc.nextInt();
+//		
+//		while(i<=n)
+//		{
+//			if(i%4==0)
+//				System.out.println("i 값 : " + i);
+//			
+//			i++;
+//		}
+//		sc.close();
+		
+		
+		//1부터 10까지 수중의 3의 배수의 합만 출력
+//		int i = 1;
+//		int sum = 0;
+//		
+//		while(i<=10)
+//		{
+//			if(i%3==0)
+//			{
+//				System.out.println("i 값 : " + i);
+//				sum += i;
+//			}
+//			i++;
+//		}
+//		System.out.println("1부터 10까지 수중 3의 배수의 합 : " +sum);
+		
+		
+		//1부터 n까지 수중의 3의 배수의 합만 출력
 		Scanner sc = new Scanner(System.in);
-		int sum=0;
-		int n = sc.nextInt();  //초기값
-		int m = sc.nextInt();  //마지막값
+		int i = 1;
+		int n = sc.nextInt();
+		int sum = 0;
 		
-		if(n>m) {
-			//Swap : 서로 바꾸기
-			int tmp = n;  //tmp라는 공간에 n의 값을 넣어줌
-			n = m;		  //빈 n에 m의 값을 넣어줌
-			m = tmp;      //빈 m에 tmp의 값을 넣어줌
-		}
-		
-		int i = n;  //i로 계산
-		while(i<=m)
+		while(i<=n)
 		{
-			sum = sum + i;
+			if(i%3==0)
+			{
+				System.out.println("i 값 : " + i);
+				sum += i;
+			}
 			i++;
 		}
-		System.out.printf("%d부터 %d 까지 합 : %d" ,n,m,sum);
+		System.out.printf("1부터 %d까지 수중 3의 배수의 합 : %d" ,n,sum);
 		sc.close();
 
 	}
