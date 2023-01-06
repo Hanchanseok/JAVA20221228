@@ -96,7 +96,7 @@ public class C01연산자 {
 //		int kor = 85;
 //		int eng = 60;
 //		char a = (kor>80 && eng>80) ? 'A' : 'B';
-//		System.out.println(score + "점은 " + a + "등급입니다.");
+//		System.out.println("당신의 점수는" + a + "등급입니다.");
 
 	}
 
