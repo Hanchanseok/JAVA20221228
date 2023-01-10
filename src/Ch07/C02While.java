@@ -162,6 +162,7 @@ public class C02While {
 		
 		
 		
+		
 		//높이만큼의 직각삼각형별이 출력되도록 합니다.
 		//높이 입력 : 3
 		//*
@@ -289,6 +290,16 @@ public class C02While {
 		//   *
 		//  ***
 		// *****
+		//i(개행)	j(공백)		k(별찍기)
+		//0			0~(h-2)~0	0~0
+		//1			0~(h-2)~1	0~2
+		//2			0~(h-2)-2	0~4
+		//3			x			0~6
+		//-----------------------
+		//i=0		j=0			k=0
+		//i++		j++			k++
+		//i<h		j<=(h-2)-i	k<=2*i
+		
 //		Scanner sc = new Scanner(System.in);
 //		int h = sc.nextInt();
 //		int i=0;
@@ -313,6 +324,7 @@ public class C02While {
 //			System.out.println();
 //			i++;
 //		}
+//		sc.close();
 		
 		
 		
