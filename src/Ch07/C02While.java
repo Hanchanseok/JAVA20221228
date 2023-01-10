@@ -386,6 +386,7 @@ public class C02While {
 		//i=0		j=0			k=0
 		//i++		j++			k++
 		//i<h		j<=i-1		k<=((h-1)*2)-(2*i) //개행의 마지막 수의 2배
+		
 		Scanner sc = new Scanner(System.in);
 		int h = sc.nextInt();
 		int i=0; //개행(줄바꿈)
