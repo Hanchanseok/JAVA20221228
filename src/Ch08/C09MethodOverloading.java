@@ -28,7 +28,7 @@ public class C09MethodOverloading {
 
 	public static void main(String[] args) {
 		C09Simple obj = new C09Simple();
-		int result = obj.sum(10,20,30);
+		int result = obj.sum(10,20,30);		//맞는 걸 들고온다.
 		System.out.println("RESULT : " +result);
 
 	}
