@@ -1,4 +1,4 @@
-package Ch10;
+package Ch10Inher;
 
 class Student2 {
 	void learn() {
