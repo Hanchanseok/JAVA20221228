@@ -21,6 +21,26 @@ public class C05Prac {
 //		double avg = (double)sum/ar1.length;
 //		System.out.println("합 : " + sum);
 //		System.out.println("평균 : " + avg);
+//		
+//		int max = ar1[0];
+//		for(int i=0; i<ar1.length; i++)
+//		{
+//			if(max < ar1[i])
+//			{
+//				max = ar1[i];
+//			}
+//		}
+//		System.out.println("최댓값 : " +max);
+//		
+//		int min = ar1[0];
+//		for(int i=0; i<ar1.length; i++)
+//		{
+//			if(min > ar1[i])
+//			{
+//				min = ar1[i];
+//			}
+//		}
+//		System.out.println("최솟값 : " +min);
 		
 		
 		
@@ -48,23 +68,23 @@ public class C05Prac {
 		//수학 총점 : ? 수학 평균 :?
 		
 		Scanner sc = new Scanner(System.in);
-//		int [][] arr = new int[5][3];
-//		
-//		int sum = 0;
-//		int stcount = 1;
-//		for (int i=0; i<arr.length; i++)
-//		{
-//			sum = 0;
-//			System.out.printf("%d 학생 점수입력(국/영/수 순서) : ", stcount);
-//			for (int j=0; j<arr[i].length; j++)
-//			{
-//				arr[i][j] = sc.nextInt();
-//				sum += arr[i][j];
-//			}
-//			stcount++;
-//		}
-//		double avg = (double)sum/arr[i].length;
-//		System.out.printf("%d 학생 총점 : %d", sum);
+		int [][] arr = new int[5][3];
+		
+		int sum = 0;
+		int stcount = 1;
+		for (int i=0; i<arr.length; i++)
+		{
+			sum = 0;
+			System.out.printf("%d 학생 점수입력(국/영/수 순서) : ", stcount);
+			for (int j=0; j<arr[i].length; j++)
+			{
+				arr[i][j] = sc.nextInt();
+				sum += arr[i][j];
+			}
+			stcount++;
+		}
+		double avg = (double)sum/arr.length;
+		System.out.printf("%d 학생 총점 : %d", sum);
 
 	}
 
