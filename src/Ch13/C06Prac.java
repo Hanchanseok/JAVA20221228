@@ -43,11 +43,21 @@ class Regular extends Employee	//정규직
 }
 public class C06Prac {
 
-	public static  void ShowInfo(Employee emp) {
+	public static  void ShowInfo(Employee emp) //Employee emp = emp1;
+	{
 		//다운캐스팅을 통해서 parttimer or regular를 선별해서
 		//모든 정보를 출력해보세요
-		
-		emp.show();
+		if(emp instanceof Parttimer) 
+		{
+			Parttimer down = (Parttimer)emp;
+			down.show();
+		}
+		else if(emp instanceof Regular)
+		{
+			Regular down = (Regular)emp;
+			down.show();
+		}
+		//emp.show();
 	}
 	public static void main(String[] args) {
 		Parttimer emp1 = new Parttimer("홍길동","25","대구",20000);
