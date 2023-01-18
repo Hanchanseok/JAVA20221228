@@ -57,7 +57,7 @@ public class C06Prac {
 			Regular down = (Regular)emp;
 			down.show();
 		}
-		//emp.show();
+		//emp.show();  //위에 if소스 지우고 이거 써도 출력됨
 	}
 	public static void main(String[] args) {
 		Parttimer emp1 = new Parttimer("홍길동","25","대구",20000);
