@@ -5,7 +5,21 @@ package Ch12;
 
 class ArrayUtil {
    public static int[] concat(int[] a, int[] b) {
-            /* 배열 a와 b를 연결한 새로운 배열 리턴 */
+       /* 배열 a와 b를 연결한 새로운 배열 리턴 */
+	   int len = a.length+b.length;
+	   int[] arr = new int[len];
+	   int i=0;
+	   while(i<a.length)
+	   {
+		   arr[i] = a[i];
+		   i++;
+	   }
+	   while(i<len)
+	   {
+		   arr[i] = b[i-a.length];
+		   i++;
+	   }
+	   return arr;
    }
    public static void print(int[] a) {
       /* 배열 a 출력 */
