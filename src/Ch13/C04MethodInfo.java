@@ -28,12 +28,18 @@ public class C04MethodInfo {
 //		Super ob2 = new Super();
 //		Sub ob3 = new Sub();
 		
-		//Upcasting(상위클래스 참조변수 = 하위객체)
-		Super ob4 = new Sub();
+		//Upcasting(상위클래스 참조변수 = 하위객체주소)
+		Super ob4 = new Sub();	//자동 형변환
 		ob4.num1=10;
 		//ob4.num2=10;  접근 안됨
 		//ob4.move();   접근 안됨
 		ob4.sound(); // 재정의 한건 접근 가능
+		
+		//Downcasting(하위클래스 참조변수 = 상위객체주소)
+		Sub down = (Sub)ob4;  //강제 형변환
+		down.num2=20;
+		down.move();   //둘다 문제없음
+		
 		
 		//업캐스팅
 		//상위클래스 참조변수로 하위객체를 연결하는 형태
