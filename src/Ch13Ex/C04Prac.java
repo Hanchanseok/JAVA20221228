@@ -13,6 +13,9 @@ class Sharpen extends Moonbanggu
 			SharpenCnt--;
 	}
 	//코드완성(오버라이딩 할 것)
+	void write() {
+		System.out.println("샤프로 씁니다.");
+	}
 	 
 }
 class Pencil extends Moonbanggu
@@ -23,6 +26,9 @@ class Pencil extends Moonbanggu
 	
 	}
 	//코드 완성(오버라이딩 할 것)
+	void write() {
+		System.out.println("연필로 씁니다.");
+	}
 	 
 }
 public class C04Prac {
