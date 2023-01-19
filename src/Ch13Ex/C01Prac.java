@@ -11,6 +11,20 @@ class TV{
 	 
 	}
 
+class ColorTV extends TV{
+	int color;
+	ColorTV(int size, int color)
+	{
+		super(size);
+		this.color=color;
+	}
+	
+	void printProperty()
+	{
+		System.out.printf("%d인치 %d컬러\n", getSize(),color);
+	}
+}
+
 
 public class C01Prac {
 
