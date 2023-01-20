@@ -16,7 +16,7 @@ class Employee{
 		if(obj instanceof Employee)
 		{
 			Employee down = (Employee)obj;
-			return this.id==down.id && this.salary==down.salary;
+			return this.id.equals(down.id) && this.salary==down.salary;	//id는 문자형이기 때문에 이렇게 함
 		}
 		return false;
 	}
