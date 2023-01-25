@@ -21,7 +21,7 @@ public class C03Map {
 		//개수
 		System.out.println("저장 수 : " + map.size());
 		
-		//전체조회
+		//전체조회  Key는 Set으로 구성되어 있다.
 		Set<String> set = map.keySet();
 		for(String key : set) 
 		{
